@@ -30,7 +30,7 @@ func (p *Parser) resetScannerProperties() {
 	p.scanner.Whitespace = scanner.GoWhitespace
 	p.scanner.Mode = scanner.GoTokens
 	p.scanner.IsIdentRune = func(r rune, pos int) bool {
-		return unicode.IsLetter(r) || r == '_' || (pos > 0 && unicode.IsDigit(r))
+		return unicode.IsLetter(r) || r == '_' || r == '-' || (pos > 0 && unicode.IsDigit(r))
 	}
 }
 
