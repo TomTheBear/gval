@@ -6,7 +6,7 @@ import (
 	"strings"
 	"time"
 
-	"github.com/PaesslerAG/gval"
+	"github.com/TomTheBear/gval"
 	"github.com/PaesslerAG/jsonpath"
 )
 
